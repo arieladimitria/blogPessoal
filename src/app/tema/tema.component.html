@@ -52,9 +52,9 @@
                     <tr *ngFor="let item of listaTemas">
                         <th>{{item.id}}</th>
                         <td>{{item.descricao}}</td>
-                        <td>
-                            <button>Editar</button>
-                            <button>Deletar</button>
+                        <td class="d-flex justify-content-end">
+                            <button class="btn btn-info mr-3" [routerLink]="['/tema-edit', item.id]">Editar</button>
+                            <button class="btn btn-danger" [routerLink]="['/tema-delete', item.id]">Deletar</button>
                         </td>
                     </tr>
                    
